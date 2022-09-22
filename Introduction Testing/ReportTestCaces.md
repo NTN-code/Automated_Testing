@@ -51,7 +51,9 @@ Phone number is valid using
 <img src=".\p7.png">
 
 ## 2. Sign Up
-System isn't offer any Sign Up, bad functionality
-We can only __Sing In__ by __Apple ID__ 
-<img src=".\p8.png">
-
+>> 2.1 You can enter `unvalid` __firts name__ and __second name__,  `valid` __B-day__!
+<img src=".\p10.png">
+<img src=".\p11.png">
+>> 2.2 `Validation Password and Email`.
+<img src=".\p9.png">
+<img src=".\p12.png">
