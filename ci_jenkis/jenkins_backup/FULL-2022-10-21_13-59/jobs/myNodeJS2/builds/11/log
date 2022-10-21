@@ -1,0 +1,36 @@
+Started by user [8mha:////4H6KZnxMlJL4ZmrWTnXTRmOX2wuN12GJyUgkDLdAoEeAAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzeEgZu/dLi1CL9xLyS/DwAFbIFyMAAAAA=[0mAnton Tkachou
+Running as SYSTEM
+Building in workspace C:\ProgramData\Jenkins\.jenkins\workspace\myNodeJS2
+The recommended git tool is: NONE
+No credentials specified
+ > C:\Program Files\Git\cmd\git.exe rev-parse --resolve-git-dir C:\ProgramData\Jenkins\.jenkins\workspace\myNodeJS2\.git # timeout=10
+Fetching changes from the remote Git repository
+ > C:\Program Files\Git\cmd\git.exe config remote.origin.url https://github.com/NTN-code/Automated_Testing # timeout=10
+Fetching upstream changes from https://github.com/NTN-code/Automated_Testing
+ > C:\Program Files\Git\cmd\git.exe --version # timeout=10
+ > git --version # 'git version 2.37.1.windows.1'
+ > C:\Program Files\Git\cmd\git.exe fetch --tags --force --progress -- https://github.com/NTN-code/Automated_Testing +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > C:\Program Files\Git\cmd\git.exe rev-parse "refs/remotes/origin/master^{commit}" # timeout=10
+Checking out Revision a34607fe7aa2e2c3d2d510d72cdb736d68cbbb84 (refs/remotes/origin/master)
+ > C:\Program Files\Git\cmd\git.exe config core.sparsecheckout # timeout=10
+ > C:\Program Files\Git\cmd\git.exe checkout -f a34607fe7aa2e2c3d2d510d72cdb736d68cbbb84 # timeout=10
+Commit message: "add_package"
+ > C:\Program Files\Git\cmd\git.exe rev-list --no-walk a34607fe7aa2e2c3d2d510d72cdb736d68cbbb84 # timeout=10
+[myNodeJS2] $ C:\ProgramData\Jenkins\.jenkins\tools\jenkins.plugins.nodejs.tools.NodeJSInstallation\localNodeJS\node.exe C:\Windows\TEMP\jenkins3753500047796148521.js
+C:\Windows\TEMP\jenkins3753500047796148521.js:1
+npm install
+    ^^^^^^^
+
+SyntaxError: Unexpected identifier 'install'
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1088:15)
+    at Module._compile (node:internal/modules/cjs/loader:1123:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+    at Module.load (node:internal/modules/cjs/loader:1037:32)
+    at Module._load (node:internal/modules/cjs/loader:878:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:82:12)
+    at node:internal/main/run_main_module:23:47
+
+Node.js v19.0.0
+Build step 'Execute NodeJS script' marked build as failure
+Finished: FAILURE

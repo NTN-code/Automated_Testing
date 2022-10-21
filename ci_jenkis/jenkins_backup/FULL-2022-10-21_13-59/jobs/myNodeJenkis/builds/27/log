@@ -1,0 +1,7 @@
+Started by user [8mha:////4H6KZnxMlJL4ZmrWTnXTRmOX2wuN12GJyUgkDLdAoEeAAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzeEgZu/dLi1CL9xLyS/DwAFbIFyMAAAAA=[0mAnton Tkachou
+Running as SYSTEM
+Building in workspace C:\ProgramData\Jenkins\.jenkins\workspace\myNodeJenkis
+Installing NodeJS from C:\ProgramData\Jenkins\.jenkins\caches\nodejs\WINDOWS\amd64\19.0.0.tar.gz to C:\ProgramData\Jenkins\.jenkins\tools\jenkins.plugins.nodejs.tools.NodeJSInstallation\localNodeJS19.0 on Jenkins
+[myNodeJenkis] $ C:\ProgramData\Jenkins\.jenkins\tools\jenkins.plugins.nodejs.tools.NodeJSInstallation\localNodeJS19.0\node.exe C:\Windows\TEMP\jenkins678769705019668225.js
+Hello World
+Finished: SUCCESS

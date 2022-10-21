@@ -1,0 +1,6 @@
+Запущен по таймеру
+Running as SYSTEM
+Собирается удаленно на [8mha:////4A+HLIjRjCq1lPE0adFXq1t/7v2dql9LKlIK4cSRRKJ6AAAApR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz+EgZJ/eT83ILSktQifRfXYO8Q/wBdS/ewEPcwMwDt1YGkzgAAAA==[0mDESKTOP-9GVTGV6 (chrome x64 win 10) in workspace D:\LABS\jenkins_slave\workspace\myNodeJenkis
+[myNodeJenkis] $ D:\LABS\jenkins_slave\tools\jenkins.plugins.nodejs.tools.NodeJSInstallation\localNodeJS19.0\node.exe C:\Windows\TEMP\jenkins14231307387880466212.js
+Hello World
+Finished: SUCCESS

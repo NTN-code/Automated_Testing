@@ -1,0 +1,10 @@
+commit b140778be948ffa2f6d36e29377dd29c6176b9e8
+tree b5276fdbef02c3a563e780e7ebf7e3327fa1cf87
+parent 77e52e12f0a1013c927dcf1cb1c108b6e4e10e88
+author NTN-code <tk2007m@mail.ru> 2022-10-20 10:41:40 +0300
+committer NTN-code <tk2007m@mail.ru> 2022-10-20 10:41:40 +0300
+
+    fix_param_js
+
+
+:100644 100644 b1a150234105c62b5b964277c0bb57985d0ee15f c5973c570aa950de78b81ef425cc1c8cbf9a1fb1 M	ci_jenkis/helloci2/JS/printusername.js

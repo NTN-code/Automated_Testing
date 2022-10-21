@@ -1,0 +1,29 @@
+Started by user [8mha:////4H6KZnxMlJL4ZmrWTnXTRmOX2wuN12GJyUgkDLdAoEeAAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzeEgZu/dLi1CL9xLyS/DwAFbIFyMAAAAA=[0mAnton Tkachou
+Running as SYSTEM
+Building in workspace C:\ProgramData\Jenkins\.jenkins\workspace\myNodeJS2
+The recommended git tool is: NONE
+No credentials specified
+ > C:\Program Files\Git\cmd\git.exe rev-parse --resolve-git-dir C:\ProgramData\Jenkins\.jenkins\workspace\myNodeJS2\.git # timeout=10
+Fetching changes from the remote Git repository
+ > C:\Program Files\Git\cmd\git.exe config remote.origin.url https://github.com/NTN-code/Automated_Testing # timeout=10
+Fetching upstream changes from https://github.com/NTN-code/Automated_Testing
+ > C:\Program Files\Git\cmd\git.exe --version # timeout=10
+ > git --version # 'git version 2.37.1.windows.1'
+ > C:\Program Files\Git\cmd\git.exe fetch --tags --force --progress -- https://github.com/NTN-code/Automated_Testing +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > C:\Program Files\Git\cmd\git.exe rev-parse "refs/remotes/origin/master^{commit}" # timeout=10
+Checking out Revision 5874e64197f1acb40aa02fdeb2bec7edf25d84fc (refs/remotes/origin/master)
+ > C:\Program Files\Git\cmd\git.exe config core.sparsecheckout # timeout=10
+ > C:\Program Files\Git\cmd\git.exe checkout -f 5874e64197f1acb40aa02fdeb2bec7edf25d84fc # timeout=10
+Commit message: "test1"
+ > C:\Program Files\Git\cmd\git.exe rev-list --no-walk 5874e64197f1acb40aa02fdeb2bec7edf25d84fc # timeout=10
+[myNodeJS2] $ cmd /c call C:\Windows\TEMP\jenkins527187787975394558.bat
+
+C:\ProgramData\Jenkins\.jenkins\workspace\myNodeJS2>echo $PATH 
+$PATH
+
+C:\ProgramData\Jenkins\.jenkins\workspace\myNodeJS2>node --version 
+v19.0.0
+
+C:\ProgramData\Jenkins\.jenkins\workspace\myNodeJS2>npm --version 
+8.19.2
+Finished: SUCCESS

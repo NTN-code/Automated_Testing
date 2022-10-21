@@ -1,0 +1,6 @@
+Запущен по таймеру
+Running as SYSTEM
+Building in workspace C:\ProgramData\Jenkins\.jenkins\workspace\myNodeJenkis
+[myNodeJenkis] $ C:\ProgramData\Jenkins\.jenkins\tools\jenkins.plugins.nodejs.tools.NodeJSInstallation\localNodeJS19.0\node.exe C:\Windows\TEMP\jenkins436167097865054941.js
+Hello World
+Finished: SUCCESS

@@ -1,0 +1,33 @@
+Started by user [8mha:////4H6KZnxMlJL4ZmrWTnXTRmOX2wuN12GJyUgkDLdAoEeAAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzeEgZu/dLi1CL9xLyS/DwAFbIFyMAAAAA=[0mAnton Tkachou
+Running as SYSTEM
+Building in workspace C:\ProgramData\Jenkins\.jenkins\workspace\myNodeJS2
+The recommended git tool is: NONE
+No credentials specified
+ > C:\Program Files\Git\cmd\git.exe rev-parse --resolve-git-dir C:\ProgramData\Jenkins\.jenkins\workspace\myNodeJS2\.git # timeout=10
+Fetching changes from the remote Git repository
+ > C:\Program Files\Git\cmd\git.exe config remote.origin.url https://github.com/NTN-code/Automated_Testing # timeout=10
+Fetching upstream changes from https://github.com/NTN-code/Automated_Testing
+ > C:\Program Files\Git\cmd\git.exe --version # timeout=10
+ > git --version # 'git version 2.37.1.windows.1'
+ > C:\Program Files\Git\cmd\git.exe fetch --tags --force --progress -- https://github.com/NTN-code/Automated_Testing +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > C:\Program Files\Git\cmd\git.exe rev-parse "refs/remotes/origin/master^{commit}" # timeout=10
+Checking out Revision 9a86a8af427a1d9ef0ec649295d6e36a38921ad3 (refs/remotes/origin/master)
+ > C:\Program Files\Git\cmd\git.exe config core.sparsecheckout # timeout=10
+ > C:\Program Files\Git\cmd\git.exe checkout -f 9a86a8af427a1d9ef0ec649295d6e36a38921ad3 # timeout=10
+Commit message: "clone_rep"
+ > C:\Program Files\Git\cmd\git.exe rev-list --no-walk 9a86a8af427a1d9ef0ec649295d6e36a38921ad3 # timeout=10
+[myNodeJS2] $ cmd /c call C:\Windows\TEMP\jenkins8392414031474003752.bat
+
+C:\ProgramData\Jenkins\.jenkins\workspace\myNodeJS2>npm install 
+npm ERR! code ENOENT
+npm ERR! syscall open
+npm ERR! path C:\ProgramData\Jenkins\.jenkins\workspace\myNodeJS2/package.json
+npm ERR! errno -4058
+npm ERR! enoent ENOENT: no such file or directory, open 'C:\ProgramData\Jenkins\.jenkins\workspace\myNodeJS2\package.json'
+npm ERR! enoent This is related to npm not being able to find a file.
+npm ERR! enoent 
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Windows\system32\config\systemprofile\AppData\Local\npm-cache\_logs\2022-10-20T05_30_13_653Z-debug-0.log
+Build step 'Выполнить команду Windows' marked build as failure
+Finished: FAILURE

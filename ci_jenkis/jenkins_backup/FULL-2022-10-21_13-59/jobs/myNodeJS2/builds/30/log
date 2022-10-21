@@ -1,0 +1,30 @@
+Запущен изменением в SCM
+Running as SYSTEM
+Building in workspace C:\ProgramData\Jenkins\.jenkins\workspace\myNodeJS2
+The recommended git tool is: NONE
+No credentials specified
+ > C:\Program Files\Git\cmd\git.exe rev-parse --resolve-git-dir C:\ProgramData\Jenkins\.jenkins\workspace\myNodeJS2\.git # timeout=10
+Fetching changes from the remote Git repository
+ > C:\Program Files\Git\cmd\git.exe config remote.origin.url https://github.com/NTN-code/Automated_Testing # timeout=10
+Fetching upstream changes from https://github.com/NTN-code/Automated_Testing
+ > C:\Program Files\Git\cmd\git.exe --version # timeout=10
+ > git --version # 'git version 2.37.1.windows.1'
+ > C:\Program Files\Git\cmd\git.exe fetch --tags --force --progress -- https://github.com/NTN-code/Automated_Testing +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > C:\Program Files\Git\cmd\git.exe rev-parse "refs/remotes/origin/master^{commit}" # timeout=10
+Checking out Revision 77e52e12f0a1013c927dcf1cb1c108b6e4e10e88 (refs/remotes/origin/master)
+ > C:\Program Files\Git\cmd\git.exe config core.sparsecheckout # timeout=10
+ > C:\Program Files\Git\cmd\git.exe checkout -f 77e52e12f0a1013c927dcf1cb1c108b6e4e10e88 # timeout=10
+Commit message: "add_artifact_and_paramJob"
+ > C:\Program Files\Git\cmd\git.exe rev-list --no-walk 5874e64197f1acb40aa02fdeb2bec7edf25d84fc # timeout=10
+[myNodeJS2] $ cmd /c call C:\Windows\TEMP\jenkins2592394228095423051.bat
+
+C:\ProgramData\Jenkins\.jenkins\workspace\myNodeJS2>node .\ci_jenkis\helloci2\JS\helloworld.js 
+Hello World
+
+C:\ProgramData\Jenkins\.jenkins\workspace\myNodeJS2>echo "LOG"  1>.\ci_jenkis\helloci2\JS\log.txt 
+
+C:\ProgramData\Jenkins\.jenkins\workspace\myNodeJS2>node .\ci_jenkis\helloci2\JS\helloworld.js  1>>.\ci_jenkis\helloci2\JS\log.txt 
+
+C:\ProgramData\Jenkins\.jenkins\workspace\myNodeJS2>exit 0 
+Archiving artifacts
+Finished: SUCCESS

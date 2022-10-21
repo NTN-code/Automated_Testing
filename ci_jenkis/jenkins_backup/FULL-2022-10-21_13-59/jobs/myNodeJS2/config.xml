@@ -1,0 +1,66 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties/>
+  <scm class="hudson.plugins.git.GitSCM" plugin="git@4.12.1">
+    <configVersion>2</configVersion>
+    <userRemoteConfigs>
+      <hudson.plugins.git.UserRemoteConfig>
+        <url>https://github.com/NTN-code/Automated_Testing</url>
+      </hudson.plugins.git.UserRemoteConfig>
+    </userRemoteConfigs>
+    <branches>
+      <hudson.plugins.git.BranchSpec>
+        <name>*/master</name>
+      </hudson.plugins.git.BranchSpec>
+    </branches>
+    <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+    <submoduleCfg class="empty-list"/>
+    <extensions/>
+  </scm>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers>
+    <com.cloudbees.jenkins.GitHubPushTrigger plugin="github@1.35.0">
+      <spec></spec>
+    </com.cloudbees.jenkins.GitHubPushTrigger>
+    <hudson.triggers.TimerTrigger>
+      <spec>0 0 * * 1-5</spec>
+    </hudson.triggers.TimerTrigger>
+    <hudson.triggers.SCMTrigger>
+      <spec>*/5 * * * 1-5</spec>
+      <ignorePostCommitHooks>false</ignorePostCommitHooks>
+    </hudson.triggers.SCMTrigger>
+  </triggers>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.tasks.BatchFile>
+      <command>node .\ci_jenkis\helloci2\JS\helloworld.js&#xd;
+echo &quot;LOG&quot; &gt; .\ci_jenkis\helloci2\JS\log.txt&#xd;
+node .\ci_jenkis\helloci2\JS\helloworld.js &gt;&gt; .\ci_jenkis\helloci2\JS\log.txt&#xd;
+</command>
+      <configuredLocalRules/>
+    </hudson.tasks.BatchFile>
+  </builders>
+  <publishers>
+    <hudson.tasks.ArtifactArchiver>
+      <artifacts>ci_jenkis/helloci2/JS/log.txt</artifacts>
+      <allowEmptyArchive>false</allowEmptyArchive>
+      <onlyIfSuccessful>true</onlyIfSuccessful>
+      <fingerprint>false</fingerprint>
+      <defaultExcludes>true</defaultExcludes>
+      <caseSensitive>true</caseSensitive>
+      <followSymlinks>false</followSymlinks>
+    </hudson.tasks.ArtifactArchiver>
+  </publishers>
+  <buildWrappers>
+    <jenkins.plugins.nodejs.NodeJSBuildWrapper plugin="nodejs@1.5.1">
+      <nodeJSInstallationName>localNodeJS19.0</nodeJSInstallationName>
+      <cacheLocationStrategy class="jenkins.plugins.nodejs.cache.PerJobCacheLocationLocator"/>
+    </jenkins.plugins.nodejs.NodeJSBuildWrapper>
+  </buildWrappers>
+</project>

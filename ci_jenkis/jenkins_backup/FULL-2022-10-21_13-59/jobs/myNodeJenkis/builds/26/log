@@ -1,0 +1,14 @@
+Запущен по таймеру
+Running as SYSTEM
+Building in workspace C:\ProgramData\Jenkins\.jenkins\workspace\myNodeJenkis
+FATAL: No installation localNodeJS found. Please define one in manager Jenkins.
+java.io.IOException: No installation localNodeJS found. Please define one in manager Jenkins.
+	at jenkins.plugins.nodejs.NodeJSBuildWrapper.setUp(NodeJSBuildWrapper.java:148)
+	at jenkins.tasks.SimpleBuildWrapper.setUp(SimpleBuildWrapper.java:294)
+	at hudson.model.Build$BuildExecution.doRun(Build.java:158)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.run(AbstractBuild.java:524)
+	at hudson.model.Run.execute(Run.java:1899)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:44)
+	at hudson.model.ResourceController.execute(ResourceController.java:107)
+	at hudson.model.Executor.run(Executor.java:449)
+Finished: FAILURE

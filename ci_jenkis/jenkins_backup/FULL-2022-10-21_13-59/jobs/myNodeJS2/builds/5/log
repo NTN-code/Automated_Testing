@@ -1,0 +1,46 @@
+Started by user [8mha:////4H6KZnxMlJL4ZmrWTnXTRmOX2wuN12GJyUgkDLdAoEeAAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzeEgZu/dLi1CL9xLyS/DwAFbIFyMAAAAA=[0mAnton Tkachou
+Running as SYSTEM
+Building in workspace C:\ProgramData\Jenkins\.jenkins\workspace\myNodeJS2
+The recommended git tool is: NONE
+No credentials specified
+ > C:\Program Files\Git\cmd\git.exe rev-parse --resolve-git-dir C:\ProgramData\Jenkins\.jenkins\workspace\myNodeJS2\.git # timeout=10
+Fetching changes from the remote Git repository
+ > C:\Program Files\Git\cmd\git.exe config remote.origin.url https://github.com/NTN-code/Automated_Testing # timeout=10
+Fetching upstream changes from https://github.com/NTN-code/Automated_Testing
+ > C:\Program Files\Git\cmd\git.exe --version # timeout=10
+ > git --version # 'git version 2.37.1.windows.1'
+ > C:\Program Files\Git\cmd\git.exe fetch --tags --force --progress -- https://github.com/NTN-code/Automated_Testing +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > C:\Program Files\Git\cmd\git.exe rev-parse "refs/remotes/origin/master^{commit}" # timeout=10
+Checking out Revision 523e3b2a74388b4eb00da01493b727157975aac0 (refs/remotes/origin/master)
+ > C:\Program Files\Git\cmd\git.exe config core.sparsecheckout # timeout=10
+ > C:\Program Files\Git\cmd\git.exe checkout -f 523e3b2a74388b4eb00da01493b727157975aac0 # timeout=10
+Commit message: "fix_js"
+ > C:\Program Files\Git\cmd\git.exe rev-list --no-walk 519bbbf2f140ae76524af25ce6ad8ca40baf2764 # timeout=10
+[myNodeJS2] $ sh -xe C:\Windows\TEMP\jenkins11741623229139787424.sh
+The system cannot find the file specified
+FATAL: Выполнение команды не удалось
+java.io.IOException: CreateProcess error=2, Не удается найти указанный файл
+	at java.base/java.lang.ProcessImpl.create(Native Method)
+	at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:494)
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:159)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1110)
+Caused: java.io.IOException: Cannot run program "sh" (in directory "C:\ProgramData\Jenkins\.jenkins\workspace\myNodeJS2"): CreateProcess error=2, Не удается найти указанный файл
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1143)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1073)
+	at hudson.Proc$LocalProc.<init>(Proc.java:254)
+	at hudson.Proc$LocalProc.<init>(Proc.java:223)
+	at hudson.Launcher$LocalLauncher.launch(Launcher.java:997)
+	at hudson.Launcher$ProcStarter.start(Launcher.java:509)
+	at hudson.tasks.CommandInterpreter.perform(CommandInterpreter.java:144)
+	at hudson.tasks.CommandInterpreter.perform(CommandInterpreter.java:92)
+	at hudson.tasks.BuildStepMonitor$1.perform(BuildStepMonitor.java:20)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.perform(AbstractBuild.java:816)
+	at hudson.model.Build$BuildExecution.build(Build.java:199)
+	at hudson.model.Build$BuildExecution.doRun(Build.java:164)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.run(AbstractBuild.java:524)
+	at hudson.model.Run.execute(Run.java:1899)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:44)
+	at hudson.model.ResourceController.execute(ResourceController.java:107)
+	at hudson.model.Executor.run(Executor.java:449)
+Build step 'Выполнить команду shell' marked build as failure
+Finished: FAILURE
