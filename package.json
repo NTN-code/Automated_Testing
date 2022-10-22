@@ -1,0 +1,22 @@
+{
+  "name": "automated_testing",
+  "version": "1.0.0",
+  "description": "<<<<<<< HEAD\r # AutoTest2\r =======\r # Automated_Testing\r >>>>>>> 61c8cbcdc88fb1c28a0c84ceb9c7dc3b1268021f",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NTN-code/Automated_Testing.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NTN-code/Automated_Testing/issues"
+  },
+  "homepage": "https://github.com/NTN-code/Automated_Testing#readme",
+  "dependencies": {
+    "jest": "^29.2.1"
+  }
+}
