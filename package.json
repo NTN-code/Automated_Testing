@@ -18,5 +18,8 @@
   "homepage": "https://github.com/NTN-code/Automated_Testing#readme",
   "dependencies": {
     "jest": "^29.2.1"
+  },
+  "devDependencies": {
+    "cypress": "^11.1.0"
   }
 }
