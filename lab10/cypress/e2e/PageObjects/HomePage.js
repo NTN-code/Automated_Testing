@@ -34,6 +34,19 @@ class HomePage {
     cy.get('[data-ac-autom="gn-bagview-link-bag"]').click();
   }
 
+  static openMenuTitle(id){
+    cy.get(".ac-gn-bagview-nav-nobtn li").eq(id).click();
+  }
+
+  static playpauseVideo(){
+    
+    cy.get(".play-pause-button").click();
+    cy.get(".play-pause-button").click();
+    cy.wait(2000);
+    cy.get(".play-pause-button").click();
+    
+  }
+
 }
 
 export default HomePage;
