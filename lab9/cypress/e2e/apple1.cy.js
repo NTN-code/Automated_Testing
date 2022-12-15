@@ -35,11 +35,11 @@ describe('Test header link', () => {
   it('Tape accessories link', () => {
     // weired url
     cy.get(".ac-gn-link-accessories").click();
-    cy.location('href').should("be.equal", `${Cypress.config("baseUrl")}/accessories/all/`)
+    cy.location('href').should("be.equal", `${Cypress.config("baseUrl")}/shop/accessories/all`)
   })
   it('Tape support link', () => {
     cy.get(".ac-gn-link-support").click();
-    cy.location('href').should("be.equal", `${Cypress.config("baseUrl")}/support/`)
+    cy.location('href').should("be.equal", `https://support.apple.com/`)
   }),
   it("Tape search and test it", () => {
     cy.visit('https://www.apple.com/');

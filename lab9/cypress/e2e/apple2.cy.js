@@ -25,8 +25,8 @@ describe('Buy workflow', () => {
 
     cy.get('[data-autom="guest-checkout-btn"]').click();
     cy.wait(2000);
-
-    cy.get('[data-autom="fulfillment-option-RETAIL"]').click();
+    
+    cy.get('input[data-autom="fulfillment-option-RETAIL"]').click();
     cy.get('[data-autom="bag-storelocator-input"]').type("75002");
     cy.wait(2000);
     

@@ -30,7 +30,8 @@ describe('Cloud google2', () => {
 
     cy.get('button[aria-label="Add to Estimate"]').eq(0).click();
 
-    cy.get("#email_quote").click();
+    cy.wait(2000)
+    cy.get('button[id="Email Estimate"]').click();
 
     // groitretravoka-9580@yopmail.com
     recurse(

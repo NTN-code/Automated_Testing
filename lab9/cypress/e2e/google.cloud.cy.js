@@ -28,8 +28,8 @@ describe('Cloud google1', () => {
     cy.get('md-select[placeholder="GPU type"]').click();
     cy.contains("NVIDIA Tesla V100").click()
 
-    cy.get('md-select[placeholder="Number of GPUs"]').click();
-    cy.get('#select_option_479').click();
+    // cy.get('md-select[placeholder="Number of GPUs"]').click();
+    // cy.get('#select_option_477').click();
 
     cy.get('md-select[placeholder="Local SSD"]').eq(0).click();
     cy.contains("2x375 GB").click();

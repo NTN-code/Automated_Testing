@@ -6,6 +6,7 @@ module.exports = defineConfig({
     experimentalModifyObstructiveThirdPartyCode: true,
     modifyObstructiveCode: false,
     chromeWebSecurity: false,
+    experimentalSessionAndOrigin: true,
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
